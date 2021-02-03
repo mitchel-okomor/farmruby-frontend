@@ -1,4 +1,4 @@
-https://circleci.com/gh/mitchel-okomor/farmruby-frontend.svg?style=svg
+[![CircleCI](https://circleci.com/gh/mitchel-okomor/farmruby-frontend.svg?style=svg)](https://circleci.com/gh/mitchel-okomor/farmruby-frontend)
 
 ## Prjoject Tittle
 
