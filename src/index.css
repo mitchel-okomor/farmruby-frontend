@@ -42,3 +42,10 @@ a:visited {
   text-decoration: none;
   color: inherit;
 }
+
+.warning {
+  color: red;
+  margin-bottom: 10px;
+  border-bottom: none !important;
+  font-size: x-large;
+}

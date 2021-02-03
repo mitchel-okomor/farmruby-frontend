@@ -29,7 +29,7 @@
 .intro h1 {
   font-weight: 800;
   font-size: 5.1vw;
-  line-height: 96px;
+  line-height: 7.1vw;
   font-style: normal;
   margin-top: 111px;
   margin-bottom: 30px;
@@ -95,7 +95,7 @@
 }
 
 .form input {
-  height: 27px;
+  height: 30px;
   border: none;
   padding: 12px 0 12px 0;
   width: 100%;
@@ -189,7 +189,13 @@
 }
 
 .fa-eye {
-  float: right;
+  font-size: x-large;
+  position: absolute;
+  top: 30px;
+  right: 2px;
+}
+.fa-eye:hover {
+  cursor: pointer;
 }
 
 .sign-in {
@@ -202,4 +208,8 @@
 }
 .sign-in span {
   font-weight: bold;
+}
+
+.password {
+  position: relative;
 }
