@@ -71,7 +71,7 @@ function Signup() {
     }
   };
 
-  //toggle show pasword
+  //toggle show password
   const toggle_password = () => {
     showPassword === "password"
       ? setShowPassword("")
