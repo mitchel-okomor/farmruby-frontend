@@ -4,6 +4,7 @@ export const initialState = {
   user: null,
   message: null,
   loading: false,
+  token: null,
 };
 
 export const reducer = (state = initialState, action) => {

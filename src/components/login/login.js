@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 import google_logo from "../../assets/google.svg";
 import logo from "../../assets/farmruby.png";
 import axios from "axios";
-import { SERVER_URL, SET_LOADING, SET_MESSAGE } from "../../helpers/constant";
+import {
+  SERVER_URL,
+  SET_LOADING,
+  SET_MESSAGE,
+  SET_USER,
+} from "../../helpers/constant";
 import store from "../../store/store";
 import history from "../../utility/history";
 
@@ -45,6 +50,8 @@ function Login() {
           payload: "Loggin successfully",
         });
         dispatch({ type: SET_LOADING, payload: false });
+        dispatch({ type: SET_USER, payload: res.data.fullName });
+        localStorage.setItem("token", res.data.token);
         setTimeout(function () {
           history.push("/dashboard");
         }, 1000);
