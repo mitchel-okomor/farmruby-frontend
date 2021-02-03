@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Login(props) {
-  return <div>Login</div>;
+  return <div>Login Page</div>;
 }
 
 Login.propTypes = {
