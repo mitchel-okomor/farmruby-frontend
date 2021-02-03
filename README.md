@@ -1,3 +1,5 @@
+https://circleci.com/gh/mitchel-okomor/farmruby-frontend.svg?style=svg
+
 ## Prjoject Tittle
 
 FarmRuby Frontend
