@@ -49,3 +49,12 @@ a:visited {
   border-bottom: none !important;
   font-size: x-large;
 }
+
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+.btn-secondary:hover {
+  background-color: #10ac68;
+  color: white;
+}

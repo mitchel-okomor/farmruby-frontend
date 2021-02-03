@@ -14,7 +14,7 @@ ReactJS
 HTML5
 CSS
 React context for state management
-Axios for api call
+Axios for api calls
 
 ## Available Scripts
 
