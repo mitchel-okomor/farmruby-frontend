@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useReducer } from "react";
+import { Router, Switch, Route } from "react-router-dom";
+import { reducer, initialState } from "../src/store/reducer";
+import History from "./utility/history";
+import Store from "./store/store";
+import Dashboard from "./components/Dashboard/dashboard";
+import "./App.css";
+import Signup from "./components/signup/signup";
+import Login from "./components/login/login";
 
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Store.Provider value={{ state, dispatch }}>
+      <Router history={History}>
+        <div className="App">
+          <Switch>
+            <Route exact path="/" component={Dashboard} />
+            <Route path="/signup" component={Signup} />
+            <Route path="/login" component={Login} />
+          </Switch>
+        </div>
+      </Router>
+    </Store.Provider>
   );
 }
 
