@@ -1,0 +1,237 @@
+.signup {
+  height: 904px;
+  margin: 3vw;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.left {
+  background-image: url("../../assets/markus-spiske-ZSZ6wzNU12Q-unsplash.jpg");
+  background-size: cover;
+  width: 55%;
+  border-radius: 20px 0px 0px 20px;
+}
+.background {
+  background: linear-gradient(
+    0deg,
+    rgba(56, 102, 65, 0.76),
+    rgba(56, 102, 65, 0.76)
+  );
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+}
+.container {
+  padding: 3vw 8vw 3vw 7vw;
+}
+
+.intro h1 {
+  font-weight: 800;
+  font-size: 5.1vw;
+  line-height: 7.1vw;
+  font-style: normal;
+  margin-top: 111px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  color: #18251a;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 14px 21px 14px 21px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: none;
+}
+
+.footer-nav {
+  margin-top: 200px;
+}
+
+.footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  text-transform: uppercase;
+  list-style-type: none;
+  font-size: 1.1vw;
+  font-weight: bold;
+  line-height: 24px;
+}
+.footer-nav ul li {
+  margin-right: 3vw;
+}
+.footer-nav ul li:hover {
+  font-size: 3vw;
+}
+
+.right {
+  width: 40%;
+  color: #18251a;
+  margin-left: 40px;
+}
+.right-container {
+  width: 100%;
+}
+
+.get-started h3 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.get-started p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.form {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.form input {
+  height: 30px;
+  border: none;
+  padding: 12px 0 12px 0;
+  width: 100%;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.002em;
+  text-align: left;
+}
+.form input:focus {
+  border: none;
+}
+
+.form div {
+  border-bottom: 1.49px solid #e2e2e2;
+  margin-bottom: 24px;
+}
+.input-group {
+  width: 90%;
+}
+.check {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.check input {
+  margin-right: 15px;
+}
+.check p {
+  margin-left: 15px;
+  margin-right: 156px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0.33px;
+  text-align: left;
+}
+.check,
+.check div,
+.forgot-password,
+.sign-in {
+  border: none !important;
+}
+.forgot-password,
+.sign-in {
+  color: var(--primary-color);
+}
+.submit-btn {
+  background: var(--primary-color);
+  border-radius: 4px;
+  height: 54px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.google-btn {
+  background: #e2eee7;
+  border-radius: 4px;
+  height: 54px;
+  width: 100%;
+  margin-top: 24px;
+  padding: 13px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0c1810;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.google-btn img {
+  float: left;
+}
+.form label {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0.3px;
+  text-align: left;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.fa-eye {
+  font-size: x-large;
+  position: absolute;
+  top: 30px;
+  right: 2px;
+}
+.fa-eye:hover {
+  cursor: pointer;
+}
+
+.sign-in {
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+.sign-in span {
+  font-weight: bold;
+}
+
+.password {
+  position: relative;
+}
+
+@media screen and (max-width: 680px) {
+  .left {
+    width: 100% !important;
+  }
+  .right {
+    margin-top: 40px;
+    width: 100% !important;
+  }
+  .nav {
+    display: block !important;
+    text-align: center;
+    margin: auto;
+  }
+  .nav li {
+    margin-top: 10px;
+  }
+}

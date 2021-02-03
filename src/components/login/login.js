@@ -1,12 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-function Login(props) {
-  return <div>Login Page</div>;
+function Login() {
+  return <div>login</div>;
 }
-
-Login.propTypes = {
-  token: PropTypes.string,
-};
 
 export default Login;
