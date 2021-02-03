@@ -6,6 +6,7 @@ import logo from "../../assets/farmruby.png";
 import axios from "axios";
 import { SERVER_URL, SET_LOADING, SET_MESSAGE } from "../../helpers/constant";
 import store from "../../store/store";
+import history from "../../utility/history";
 
 function Login() {
   const { state, dispatch } = useContext(store);
@@ -44,9 +45,18 @@ function Login() {
           payload: "Loggin successfully",
         });
         dispatch({ type: SET_LOADING, payload: false });
+        setTimeout(function () {
+          history.push("/dashboard");
+        }, 1000);
       })
       .catch((err) => {
-        console.log(err);
+        console.log(err.response);
+        if (err.response.status === 401) {
+          dispatch({
+            type: SET_MESSAGE,
+            payload: "Email or password incorrect",
+          });
+        }
         dispatch({ type: SET_LOADING, payload: false });
       });
   };

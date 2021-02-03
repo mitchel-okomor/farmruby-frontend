@@ -95,9 +95,9 @@
 }
 
 .form input {
-  height: 30px;
+  height: 40px;
   border: none;
-  padding: 12px 0 12px 0;
+  padding: 12px 4px 12px 6px;
   width: 100%;
   font-size: 18px;
   font-style: normal;
@@ -107,13 +107,15 @@
   text-align: left;
 }
 .form input:focus {
-  border: none;
+  border: 3px solid lightblue;
+  border-radius: 4px;
 }
 
 .form div {
   border-bottom: 1.49px solid #e2e2e2;
   margin-bottom: 24px;
 }
+
 .input-group {
   width: 90%;
 }
@@ -191,7 +193,7 @@
 .fa-eye {
   font-size: x-large;
   position: absolute;
-  top: 30px;
+  top: 35px;
   right: 2px;
 }
 .fa-eye:hover {

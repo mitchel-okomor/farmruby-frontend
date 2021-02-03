@@ -99,9 +99,9 @@
 }
 
 .form input {
-  height: 30px;
+  height: 40px;
   border: none;
-  padding: 12px 0 12px 0;
+  padding: 12px 4px 12px 6px;
   width: 100%;
   font-size: 18px;
   font-style: normal;
