@@ -4,6 +4,7 @@ import withAuth from "../../utility/withAuth";
 import store from "../../store/store";
 import axios from "axios";
 import { SERVER_URL } from "../../helpers/constant";
+import Logout from "../../helpers/Logout";
 
 function Dashboard() {
   const { state } = useContext(store);
@@ -28,9 +29,26 @@ function Dashboard() {
     fetchUser();
   }, [fetchUser]);
 
+  const LogoutUser = () => {
+    Logout();
+  };
+
   return (
     <div className="dashboard">
-      <h1>Welcome, {user ? user.name : "user"}</h1>
+      <div>
+        <h1>Welcome, {user ? user.name : "user"}</h1>
+      </div>
+
+      <div>
+        <button
+          className="logout"
+          onClick={() => {
+            LogoutUser();
+          }}
+        >
+          Logout
+        </button>
+      </div>
     </div>
   );
 }

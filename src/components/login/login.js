@@ -66,6 +66,10 @@ function Login() {
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("userId", res.data._id);
         setTimeout(function () {
+          dispatch({
+            type: SET_MESSAGE,
+            payload: "",
+          });
           history.push("/dashboard");
         }, 1000);
       })
