@@ -30,7 +30,7 @@ function Dashboard() {
 
   return (
     <div className="dashboard">
-      <h1>Welcome, {user.name}</h1>
+      <h1>Welcome, {user ? user.name : "user"}</h1>
     </div>
   );
 }
