@@ -1,5 +1,8 @@
 [![CircleCI](https://circleci.com/gh/mitchel-okomor/farmruby-frontend/tree/login.svg?style=svg)](https://circleci.com/gh/mitchel-okomor/farmruby-frontend/tree/login)
 
+##Deployment Link
+https://zealous-shockley-1d98af.netlify.app/
+
 ## Prjoject Tittle
 
 FarmRuby Frontend
