@@ -1,8 +1,7 @@
-import { useReducer, useEffect } from "react";
+import { useReducer } from "react";
 import { Router, Switch, Route } from "react-router-dom";
 import { reducer, initialState } from "../src/store/reducer";
 import History from "./utility/history";
-import { SET_TOKEN } from "./helpers/constant";
 import Store from "./store/store";
 import Dashboard from "./components/Dashboard/dashboard";
 import "./App.css";
@@ -12,16 +11,13 @@ import Login from "./components/login/login";
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  useEffect(() => {
-    dispatch({ type: SET_TOKEN, payload: localStorage.getItem("token") });
-  }, [dispatch]);
-
   return (
     <Store.Provider value={{ state, dispatch }}>
       <Router history={History}>
         <div className="App">
           <Switch>
             <Route exact path="/" component={Dashboard} />
+            <Route path="/dashboard" component={Dashboard} />
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
           </Switch>

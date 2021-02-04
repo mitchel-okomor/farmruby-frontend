@@ -2,25 +2,25 @@ import React, { useEffect, useState, useContext } from "react";
 import checkLogin from "../helpers/checkLogin";
 import history from "./history";
 import store from "../store/store";
+import { SET_TOKEN } from "../helpers/constant";
 
 const withAuth = (AuthComponent) => {
   const AuthWrapped = () => {
-    const { state } = useContext(store);
-    const { user } = state;
+    const { dispatch } = useContext(store);
 
     const [isAuthenticated, setIsAuthenticated] = useState(false);
-
     useEffect(() => {
       //check if it's still authenticated
       const isConfirmed = checkLogin();
 
-      if (!isConfirmed && user.length < 1) {
+      if (!isConfirmed) {
         history.push("/login");
         window.location.reload();
       } else {
+        dispatch({ type: SET_TOKEN, payload: localStorage.getItem("token") });
         setIsAuthenticated(true);
       }
-    }, [user]);
+    }, [dispatch]);
 
     if (isAuthenticated) {
       return (

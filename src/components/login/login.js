@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import "./login.css";
 import { Link } from "react-router-dom";
 import google_logo from "../../assets/google.svg";
@@ -8,6 +8,7 @@ import {
   SERVER_URL,
   SET_LOADING,
   SET_MESSAGE,
+  SET_TOKEN,
   SET_USER,
 } from "../../helpers/constant";
 import store from "../../store/store";
@@ -15,11 +16,18 @@ import history from "../../utility/history";
 
 function Login() {
   const { state, dispatch } = useContext(store);
-  const { loading, message } = state;
+  const { loading, message, token } = state;
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState("password");
+
+  useEffect(() => {
+    console.log(token);
+    if (token) {
+      history.push("/");
+    }
+  }, [token]);
 
   const handleChange = (e) => {
     console.log(e.target.value);
@@ -50,8 +58,13 @@ function Login() {
           payload: "Loggin successfully",
         });
         dispatch({ type: SET_LOADING, payload: false });
-        dispatch({ type: SET_USER, payload: res.data.fullName });
+        dispatch({
+          type: SET_USER,
+          payload: { name: res.data.fullName, id: res.data._id },
+        });
+        dispatch({ type: SET_TOKEN, payload: res.data.token });
         localStorage.setItem("token", res.data.token);
+        localStorage.setItem("userId", res.data._id);
         setTimeout(function () {
           history.push("/dashboard");
         }, 1000);
