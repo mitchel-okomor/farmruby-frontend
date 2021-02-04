@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/mitchel-okomor/farmruby-frontend/tree/login.svg?style=svg)](https://circleci.com/gh/mitchel-okomor/farmruby-frontend/tree/login)
+[![CircleCI](https://circleci.com/gh/mitchel-okomor/farmruby-frontend.svg?style=svg)](https://circleci.com/gh/mitchel-okomor/farmruby-frontend)
 
 ##Deployment Link
 https://zealous-shockley-1d98af.netlify.app/
