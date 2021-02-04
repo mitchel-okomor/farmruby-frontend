@@ -18,8 +18,8 @@ jobs:
           name: Run Test
           command: |
             npm test
+            --passWithNoTests
       - run: # run tests
           name: Run build
           command: |
             npm build
-      --passWithNoTests
