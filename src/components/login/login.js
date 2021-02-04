@@ -76,8 +76,11 @@ function Login() {
             type: SET_MESSAGE,
             payload: "Email or password incorrect",
           });
+          dispatch({ type: SET_LOADING, payload: false });
+        } else {
+          console.log(err);
+          dispatch({ type: SET_LOADING, payload: false });
         }
-        dispatch({ type: SET_LOADING, payload: false });
       });
   };
 
