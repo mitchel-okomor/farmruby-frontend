@@ -4401,7 +4401,7 @@ entities@^2.0.0, entities@~2.1.0:
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.1.0.tgz#992d3129cf7df6870b96c57858c249a120f8b8b5"
   integrity sha512-hCx1oky9PFrJ611mf0ifBLBRW8lUUVRlFolb5gWRfIELabBlbp9xZvrqZLZAs+NxFnbfQoeGd8wDkygjg7U85w==
 
-enzyme-adapter-react-16@^1.15.6:
+enzyme-adapter-react-16@^1.17.3:
   version "1.15.6"
   resolved "https://registry.yarnpkg.com/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.15.6.tgz#fd677a658d62661ac5afd7f7f541f141f8085901"
   integrity sha512-yFlVJCXh8T+mcQo8M6my9sPgeGzj85HSHi6Apgf1Cvq/7EL/J9+1JoJmJsRxZgyTvPMAqOEpRSu/Ii/ZpyOk0g==
@@ -7023,6 +7023,11 @@ jsprim@^1.2.2:
   dependencies:
     array-includes "^3.1.1"
     object.assign "^4.1.1"
+
+jwt-decode@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/jwt-decode/-/jwt-decode-3.1.2.tgz#3fb319f3675a2df0c2895c8f5e9fa4b67b04ed59"
+  integrity sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==
 
 killable@^1.0.1:
   version "1.0.1"

@@ -1,5 +1,5 @@
 .signup {
-  height: 904px;
+  height: 800px;
   margin: 3vw;
   color: #ffffff;
   display: flex;
@@ -64,7 +64,7 @@
   margin-right: 3vw;
 }
 .footer-nav ul li:hover {
-  font-size: 3vw;
+  font-size: 1.5vw;
 }
 
 .right {
@@ -99,9 +99,9 @@
 }
 
 .form input {
-  height: 30px;
+  height: 40px;
   border: none;
-  padding: 12px 0 12px 0;
+  padding: 12px 4px 12px 6px;
   width: 100%;
   font-size: 18px;
   font-style: normal;

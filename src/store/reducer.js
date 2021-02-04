@@ -2,8 +2,9 @@ import { SET_LOADING, SET_USER, SET_MESSAGE } from "../helpers/constant";
 
 export const initialState = {
   user: null,
-  message: "",
+  message: null,
   loading: false,
+  token: null,
 };
 
 export const reducer = (state = initialState, action) => {
