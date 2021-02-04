@@ -6,6 +6,7 @@ import "./App.css";
 import Signup from "./components/signup/signup";
 import Login from "./components/login/login";
 import store from "./store/store";
+import NotFound from "./components/notfound/notfound";
 import {
   SERVER_URL,
   SET_LOADING,
@@ -61,6 +62,7 @@ function App() {
             <Route path="/dashboard" component={Dashboard} />
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
+            <Route component={NotFound} />
           </Switch>
         )}
       </div>
