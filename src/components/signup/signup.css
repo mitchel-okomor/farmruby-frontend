@@ -7,13 +7,13 @@
   flex-wrap: wrap;
   text-align: left;
 }
-.left {
+.signup .left {
   background-image: url("../../assets/markus-spiske-ZSZ6wzNU12Q-unsplash.jpg");
   background-size: cover;
   width: 55%;
   border-radius: 20px 0px 0px 20px;
 }
-.background {
+.signup .background {
   background: linear-gradient(
     0deg,
     rgba(56, 102, 65, 0.76),
@@ -22,11 +22,11 @@
   height: 100%;
   border-radius: 20px 0px 0px 20px;
 }
-.container {
+.signup .container {
   padding: 3vw 8vw 3vw 7vw;
 }
 
-.intro h1 {
+.signup .intro h1 {
   font-weight: 800;
   font-size: 4.5vw;
   line-height: 7.1vw;
@@ -35,7 +35,7 @@
   margin-bottom: 30px;
 }
 
-.btn {
+.signup .btn {
   color: #18251a;
   font-weight: 700;
   font-size: 18px;
@@ -46,37 +46,37 @@
   border: none;
 }
 
-.footer-nav {
+.signup .footer-nav {
   margin-top: 200px;
 }
 
-.footer-nav ul {
+.signup .footer-nav ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   text-transform: uppercase;
   list-style-type: none;
-  font-size: 1.1vw;
+  font-size: 1.5vw;
   font-weight: bold;
   line-height: 24px;
 }
-.footer-nav ul li {
+.signup .footer-nav ul li {
   margin-right: 3vw;
 }
-.footer-nav ul li:hover {
-  font-size: 1.5vw;
+.signup .footer-nav ul li:hover {
+  font-size: 1.6vw;
 }
 
-.right {
+.signup .right {
   width: 40%;
   color: #18251a;
   margin-left: 40px;
 }
-.right-container {
+.signup .right-container {
   width: 100%;
 }
 
-.get-started h3 {
+.signup .get-started h3 {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -84,7 +84,7 @@
   letter-spacing: 0em;
   text-align: left;
 }
-.get-started p {
+.signup .get-started p {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -93,12 +93,12 @@
   text-align: left;
 }
 
-.form {
+.signup .form {
   margin-top: 40px;
   width: 100%;
 }
 
-.form input {
+.signup .form input {
   height: 40px;
   border: none;
   padding: 12px 4px 12px 6px;
@@ -110,27 +110,27 @@
   letter-spacing: 0.002em;
   text-align: left;
 }
-.form input:focus {
+.signup .form input:focus {
   border: none;
 }
 
-.form div {
+.signup .form div {
   border-bottom: 1.49px solid #e2e2e2;
   margin-bottom: 24px;
 }
-.input-group {
+.signup .input-group {
   width: 90%;
 }
-.check {
+.signup .check {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.check input {
+.signup .check input {
   margin-right: 15px;
 }
-.check p {
+.signup .check p {
   margin-left: 15px;
   margin-right: 156px;
   font-size: 16px;
@@ -140,17 +140,17 @@
   letter-spacing: 0.33px;
   text-align: left;
 }
-.check,
+.signup .check,
 .check div,
 .forgot-password,
 .sign-in {
   border: none !important;
 }
-.forgot-password,
+.signup .forgot-password,
 .sign-in {
   color: var(--primary-color);
 }
-.submit-btn {
+.signup .submit-btn {
   background: var(--primary-color);
   border-radius: 4px;
   height: 54px;
@@ -163,7 +163,7 @@
   text-transform: uppercase;
 }
 
-.google-btn {
+.signup .google-btn {
   background: #e2eee7;
   border-radius: 4px;
   height: 54px;
@@ -178,10 +178,10 @@
   font-weight: bold;
   text-transform: uppercase;
 }
-.google-btn img {
+.signup .google-btn img {
   float: left;
 }
-.form label {
+.signup .form label {
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -192,17 +192,17 @@
   text-transform: uppercase;
 }
 
-.fa-eye {
+.signup .fa-eye {
   font-size: x-large;
   position: absolute;
   top: 30px;
-  right: 2px;
+  right: 6px;
 }
-.fa-eye:hover {
+.signup .fa-eye:hover {
   cursor: pointer;
 }
 
-.sign-in {
+.signup .sign-in {
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -210,28 +210,53 @@
   line-height: 27px;
   letter-spacing: 0em;
 }
-.sign-in span {
+.signup .sign-in span {
   font-weight: bold;
 }
 
-.password {
+.signup .password {
   position: relative;
 }
 
 @media screen and (max-width: 680px) {
-  .left {
-    width: 100% !important;
+  .signup .left {
+    width: 100%;
   }
-  .right {
+  .signup .right {
     margin-top: 40px;
-    width: 100% !important;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
   }
-  .nav {
-    display: block !important;
+  .signup .intro h1 {
+    font-size: 12vw;
+    line-height: 16.1vw;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .signup .btn {
+    margin-top: 10px;
+  }
+  .signup .nav {
+    display: block;
     text-align: center;
     margin: auto;
   }
-  .nav li {
+  .signup .footer-nav {
+    margin-top: 100px;
+  }
+  .signup .nav li {
     margin-top: 10px;
+  }
+  .signup .check p {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .signup .footer-nav ul {
+    font-size: 4.2vw;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 24px;
   }
 }

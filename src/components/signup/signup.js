@@ -79,7 +79,6 @@ function Signup() {
 
     //hide password of 2sec
     setTimeout(function () {
-      console.log(showPassword);
       setShowPassword("password");
     }, 2000);
   };
@@ -163,7 +162,7 @@ function Signup() {
                   required
                 />
                 <i
-                  className="fa fa-eye"
+                  className={`fa fa-eye ${password.length > 1 ? "" : "hide"}`}
                   aria-hidden={true}
                   onClick={toggle_password}
                 ></i>
