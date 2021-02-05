@@ -169,7 +169,7 @@ function Login() {
                   required
                 />
                 <i
-                  className="fa fa-eye"
+                  className={`fa fa-eye ${password.length > 1 ? "" : "hide"}`}
                   aria-hidden={true}
                   onClick={toggle_password}
                 ></i>

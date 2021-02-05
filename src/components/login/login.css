@@ -1,19 +1,19 @@
 .login {
   height: 700px;
-  margin: 40px;
+  margin: 3vw;
   color: #ffffff;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   text-align: left;
 }
-.left {
+.login .left {
   background-image: url("../../assets/markus-spiske-ZSZ6wzNU12Q-unsplash.jpg");
   background-size: cover;
   width: 55%;
   border-radius: 20px 0px 0px 20px;
 }
-.background {
+.login .background {
   background: linear-gradient(
     0deg,
     rgba(56, 102, 65, 0.76),
@@ -22,8 +22,11 @@
   height: 100%;
   border-radius: 20px 0px 0px 20px;
 }
+.login .container {
+  padding: 3vw 8vw 3vw 7vw;
+}
 
-.intro h1 {
+.login .intro h1 {
   font-weight: 800;
   font-size: 4.5vw;
   line-height: 7.1vw;
@@ -32,7 +35,7 @@
   margin-bottom: 30px;
 }
 
-.btn {
+.login .btn {
   color: #18251a;
   font-weight: 700;
   font-size: 18px;
@@ -43,36 +46,38 @@
   border: none;
 }
 
-.footer-nav {
+.login .footer-nav {
   margin-top: 200px;
 }
 
-.footer-nav ul {
+.login .footer-nav ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   text-transform: uppercase;
   list-style-type: none;
-  font-size: 15px;
+  font-size: 1.5vw;
   font-weight: bold;
   line-height: 24px;
 }
-.footer-nav ul li {
-  margin-right: 40px;
+.login .footer-nav ul li {
+  margin-right: 3vw;
 }
-
-.right {
+.login .footer-nav ul li:hover {
+  font-size: 1.6vw;
+}
+.login .right {
   width: 40%;
   color: #18251a;
   margin-left: 40px;
   display: flex;
   align-items: center;
 }
-.right-container {
+.login .right-container {
   width: 100%;
 }
 
-.get-started h3 {
+.login .get-started h3 {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -80,7 +85,7 @@
   letter-spacing: 0em;
   text-align: left;
 }
-.get-started p {
+.login .get-started p {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -89,12 +94,12 @@
   text-align: left;
 }
 
-.form {
+.login .form {
   margin-top: 40px;
   width: 100%;
 }
 
-.form input {
+.login .form input {
   height: 40px;
   border: none;
   padding: 12px 4px 12px 6px;
@@ -106,29 +111,29 @@
   letter-spacing: 0.002em;
   text-align: left;
 }
-.form input:focus {
+.login .form input:focus {
   border: 3px solid lightblue;
   border-radius: 4px;
 }
 
-.form div {
+.login .form div {
   border-bottom: 1.49px solid #e2e2e2;
   margin-bottom: 24px;
 }
 
-.input-group {
+.login .input-group {
   width: 90%;
 }
-.check {
+.login .check {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.check input {
+.login .check input {
   margin-right: 15px;
 }
-.check p {
+.login .check p {
   margin-left: 15px;
   margin-right: 156px;
   font-size: 16px;
@@ -138,17 +143,17 @@
   letter-spacing: 0.33px;
   text-align: left;
 }
-.check,
+.login .check,
 .check div,
 .forgot-password,
 .sign-in {
   border: none !important;
 }
-.forgot-password,
+.login .forgot-password,
 .sign-in {
   color: var(--primary-color);
 }
-.submit-btn {
+.login .submit-btn {
   background: var(--primary-color);
   border-radius: 4px;
   height: 54px;
@@ -161,7 +166,7 @@
   text-transform: uppercase;
 }
 
-.google-btn {
+.login .google-btn {
   background: #e2eee7;
   border-radius: 4px;
   height: 54px;
@@ -176,10 +181,10 @@
   font-weight: bold;
   text-transform: uppercase;
 }
-.google-btn img {
+.login .google-btn img {
   float: left;
 }
-.form label {
+.login .form label {
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -190,17 +195,17 @@
   text-transform: uppercase;
 }
 
-.fa-eye {
+.login .fa-eye {
   font-size: x-large;
   position: absolute;
   top: 35px;
-  right: 2px;
+  right: 6px;
 }
-.fa-eye:hover {
+.login .fa-eye:hover {
   cursor: pointer;
 }
 
-.sign-in {
+.login .sign-in {
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -208,23 +213,56 @@
   line-height: 27px;
   letter-spacing: 0em;
 }
-.sign-in span {
+.login .sign-in span {
   font-weight: bold;
 }
 
-.password {
+.login .password {
   position: relative;
 }
-.forgot-password {
+.login .forgot-password {
   width: fit-content;
   border-bottom: var(--primary-color) solid 1.49px !important;
 }
 @media screen and (max-width: 680px) {
-  .left {
-    width: 100% !important;
+  .login .left {
+    width: 100%;
   }
-  .right {
+  .login .right {
     margin-top: 40px;
-    width: 100% !important;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+  }
+  .login .intro h1 {
+    font-size: 12vw;
+    line-height: 16.1vw;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .login .btn {
+    margin-top: 10px;
+  }
+  .login .nav {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+  .login .footer-nav {
+    margin-top: 100px;
+  }
+  .login .nav li {
+    margin-top: 10px;
+  }
+  .login .check p {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .login .footer-nav ul {
+    font-size: 4.2vw;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 24px;
   }
 }
