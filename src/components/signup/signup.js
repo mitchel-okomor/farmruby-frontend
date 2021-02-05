@@ -16,7 +16,6 @@ function Signup() {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState("password");
   const [accept_condition, setAccept_conditon] = useState(false);
-  const [showIcon, setShowIcon] = useState(false);
 
   const handleChange = (e) => {
     console.log(e.target.value);
